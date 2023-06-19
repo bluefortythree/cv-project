@@ -1,19 +1,23 @@
-import React from 'react';
-import General from './general'
-import Education from './education'
-import Experience from './experience'
+import React, { Component } from 'react';
+import Form from './form'
 
-function Main() {
-    return (
-        <div>
-            <General />
-            <br />
-            <br />
-            <Education />
-            <br />
-            <br />
-            <Experience />
-        </div>)
+class Main extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <Form />
+                <br />
+                <br />
+            </div>)
+    }
 }
 
 export default Main;
