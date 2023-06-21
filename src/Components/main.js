@@ -12,11 +12,10 @@ class Main extends Component {
 
     render() {
         return (
-            <div>
+            <div id="form-container">
                 <Form />
-                <br />
-                <br />
-            </div>)
+            </div>
+        )
     }
 }
 

@@ -14,12 +14,10 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div id="container">
         <Title />
-        <br></br>
-        <br />
         <Main />
-      </>
+      </div>
     )
   }
 }

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(238, 235, 235);
 }
 
 code {
@@ -12,6 +13,109 @@ code {
     monospace;
 }
 
+#title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
 legend {
   font-weight: 600;
+}
+
+input, select {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right:80px;
+  border-radius: 20px;
+  background-color: lavenderblush;
+}
+
+#general, #education, #work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#general-body {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+#general-body > div, #education-body > div, #work-body > div, #general-review-body > div, #education-review-body > div, #work-review-body {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#education-body {
+  display: grid;
+  text-align: center;
+}
+
+#highest-level, #main-tasks, #highest-level-review, #main-tasks-review {
+  grid-column: span 2;
+}
+
+#work-body {
+  display: grid;
+  text-align: center;
+}
+
+#review {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  width: 50%;
+  align-self: center;
+}
+
+#review-page {
+  width: 552px;
+}
+
+#review-container {
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right:80px;
+  border-radius: 20px;
+  background-color: lavenderblush;
+  text-align: center;
+}
+
+#general-review-body, #education-review-body, #work-review-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#buttons-container {
+  margin-top: 15px;
+  align-self: center;
+}
+
+#buttons-container > button {
+  font-weight: 600;
+  font-size: 20px;
+  width: 100px;
+  margin: 15px;
 }
