@@ -59,9 +59,9 @@ form {
   grid-template-columns: 1fr 1fr;
 }
 
-#general-body > div, #education-body > div, #work-body > div, #general-review-body > div, #education-review-body > div, #work-review-body {
-  margin-left: 5px;
-  margin-right: 5px;
+#general-body > div, #education-body > div, #work-body > div, #general-review-body > div, #education-review-body > div, #work-review-body > div {
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -107,6 +107,13 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+#first-name-review, #last-name-review, #email-review, #phone-number-review, #school-name-review, #title-of-study-review, #study-start-review, #study-end-review, 
+#company-name-review, #position-title-review, #main-tasks-review, #start-date-review, #end-date-review > div {
+  overflow-wrap: anywhere;
+}
+
+
 
 #buttons-container {
   margin-top: 15px;
